@@ -33,48 +33,6 @@ contrôler les spots quand la click track est lancée.
 
 ---
 
-##  Patch DMX
-
-**Remarque :** Chaque spot utilise 7 canaux DMX
-(Dimmer + R + G + B + Strobe + Macro + Mode). La numérotation laisse de la place
-pour des extensions futures.
-
-**Frontaux (Fx)**
-
-| Spot | Position        | Adresse de départ | Canaux utilisés |
-| ---- | --------------- | ----------------- | --------------- |
-| F1   | Avant gauche    | 1                 | 1–7             |
-| F2   | Avant droit     | 9                 | 9–15            |
-| F3   | (réservé futur) | 17                | 17–23           |
-| F4   | (réservé futur) | 25                | 25–31           |
-
-**Side gauche (SIDE_Lx)**
-
-| Spot     | Position        | Adresse de départ | Canaux utilisés |
-|----------| --------------- | ----------------- | --------------- |
-| SIDE_L1  | Haut gauche     | 101               | 101–107         |
-| SIDE_L2  | Bas gauche      | 109               | 109–115         |
-| SIDE_L3  | (réservé futur) | 117               | 117–123         |
-
-**Side droit (SIDE_Rx)**
-
-| Spot     | Position        | Adresse de départ | Canaux utilisés |
-|----------| --------------- | ----------------- | --------------- |
-| SIDE_R1  | Haut droit      | 201               | 201–207         |
-| SIDE_R2  | Bas droit       | 209               | 209–215         |
-| SIDE_R3  | (réservé futur) | 217               | 217–223         |
-
-**Backlights (BACK_xx)**
-
-| Spot    | Position               | Adresse de départ | Canaux utilisés |
-|---------|------------------------| ----------------- | --------------- |
-| BACK_L1 | Derrière batterie, sol | 301               | 301–307         |
-| BACK_L2 | (réservé futur)        | 301               | 301–307         |
-| BACK_R1 | Derrière claviers, sol | 317               | 317–323         |
-| BACK_R2 | (réservé futur)        | 325               | 325–331         |
-
----
-
 ## Instructions de travail
 
 ### Lancer le projet QLC+
