@@ -1,0 +1,19 @@
+services:
+  server:
+    build: ./server
+    ports:
+      - "8080:8080"
+      - "6454:6454/udp"
+    environment:
+      - QXW_PATH=/app/data/show.qxw
+    volumes:
+      - ../show_4_spots_sol_2026_02:/app/data:ro
+    restart: always
+
+  ui:
+    image: nginx:alpine
+    ports:
+      - "3000:80"
+    volumes:
+      - ./ui:/usr/share/nginx/html
+    restart: always

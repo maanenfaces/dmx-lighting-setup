@@ -1,0 +1,1241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Workspace>
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.14.3</Version>
+  <Author>tchemine</Author>
+ </Creator>
+ <Engine>
+  <InputOutputMap>
+   <BeatGenerator BeatType="Disabled" BPM="0"/>
+   <Universe Name="Universe 1" ID="0">
+    <Output Plugin="ArtNet" UID="127.0.0.1" Line="0"/>
+   </Universe>
+   <Universe Name="Universe 2" ID="1"/>
+   <Universe Name="Universe 3" ID="2"/>
+   <Universe Name="Universe 4" ID="3"/>
+  </InputOutputMap>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>11 Channel</Mode>
+   <ID>2</ID>
+   <Name>B1 (LED 324W)</Name>
+   <Universe>0</Universe>
+   <Address>140</Address>
+   <Channels>11</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>7 Channel</Mode>
+   <ID>4</ID>
+   <Name>B3 (LED 84W)</Name>
+   <Universe>0</Universe>
+   <Address>132</Address>
+   <Channels>7</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>7 Channel</Mode>
+   <ID>5</ID>
+   <Name>F2 (LED 84W)</Name>
+   <Universe>0</Universe>
+   <Address>108</Address>
+   <Channels>7</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>7 Channel</Mode>
+   <ID>6</ID>
+   <Name>F4 (LED 84W)</Name>
+   <Universe>0</Universe>
+   <Address>116</Address>
+   <Channels>7</Channels>
+  </Fixture>
+  <FixtureGroup ID="0">
+   <Name>Front</Name>
+   <Size X="3" Y="3"/>
+   <Head X="0" Y="0" Fixture="5">0</Head>
+   <Head X="1" Y="0" Fixture="5">1</Head>
+   <Head X="2" Y="0" Fixture="5">2</Head>
+   <Head X="0" Y="1" Fixture="5">3</Head>
+   <Head X="1" Y="1" Fixture="5">4</Head>
+   <Head X="2" Y="1" Fixture="5">5</Head>
+   <Head X="0" Y="2" Fixture="5">6</Head>
+   <Head X="1" Y="2" Fixture="6">0</Head>
+   <Head X="2" Y="2" Fixture="6">1</Head>
+   <Head X="0" Y="3" Fixture="6">2</Head>
+   <Head X="1" Y="3" Fixture="6">3</Head>
+   <Head X="2" Y="3" Fixture="6">4</Head>
+   <Head X="0" Y="4" Fixture="6">5</Head>
+   <Head X="1" Y="4" Fixture="6">6</Head>
+  </FixtureGroup>
+  <FixtureGroup ID="4">
+   <Name>Back</Name>
+   <Size X="3" Y="3"/>
+   <Head X="0" Y="0" Fixture="4">0</Head>
+   <Head X="1" Y="0" Fixture="4">1</Head>
+   <Head X="2" Y="0" Fixture="4">2</Head>
+   <Head X="0" Y="1" Fixture="4">3</Head>
+   <Head X="1" Y="1" Fixture="4">4</Head>
+   <Head X="2" Y="1" Fixture="4">5</Head>
+   <Head X="0" Y="2" Fixture="4">6</Head>
+   <Head X="1" Y="2" Fixture="2">0</Head>
+   <Head X="2" Y="2" Fixture="2">1</Head>
+   <Head X="0" Y="3" Fixture="2">2</Head>
+   <Head X="1" Y="3" Fixture="2">3</Head>
+   <Head X="2" Y="3" Fixture="2">4</Head>
+   <Head X="0" Y="4" Fixture="2">5</Head>
+   <Head X="1" Y="4" Fixture="2">6</Head>
+  </FixtureGroup>
+  <ChannelsGroup ID="21" Name="Reset ALL" Value="0">2,0,2,1,2,2,2,3,2,4,2,5,2,6,4,0,4,1,4,2,4,3,4,4,4,5,4,6,5,0,5,1,5,2,5,3,5,4,5,5,5,6,6,0,6,1,6,2,6,3,6,4,6,5,6,6</ChannelsGroup>
+  <ChannelsGroup ID="0" Name="Effect Dimmer ALL" Value="0">2,0,4,0,5,0,6,0</ChannelsGroup>
+  <ChannelsGroup ID="5" Name="Effect Dimmer FRONT" Value="0"/>
+  <ChannelsGroup ID="19" Name="Effect Dimmer BACK" Value="0">2,0,4,0,5,0,6,0</ChannelsGroup>
+  <ChannelsGroup ID="1" Name="Color Blue FRONT" Value="0"/>
+  <ChannelsGroup ID="2" Name="Color Blue BACK" Value="0">2,3,4,3,5,3,6,3</ChannelsGroup>
+  <ChannelsGroup ID="13" Name="Color Red FRONT" Value="0"/>
+  <ChannelsGroup ID="9" Name="Color Red BACK" Value="0">2,1,4,1,5,1,6,1</ChannelsGroup>
+  <ChannelsGroup ID="8" Name="Color White FRONT" Value="0"/>
+  <ChannelsGroup ID="18" Name="Color White BACK" Value="0">2,1,2,2,2,3,4,1,4,2,4,3,5,1,5,2,5,3,6,1,6,2,6,3</ChannelsGroup>
+  <Function ID="0" Type="Scene" Name="_House Lights (Avant / Après concert)">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>0,30,1,255,2,255,3,255</ChannelGroupsVal>
+   <FixtureVal ID="2">0,16,1,255,2,255,3,255</FixtureVal>
+   <FixtureVal ID="5">0,30,1,255,2,255,3,255</FixtureVal>
+   <FixtureVal ID="6">0,30,1,255,2,255,3,255</FixtureVal>
+   <FixtureVal ID="4">0,30,1,255,2,255,3,255</FixtureVal>
+  </Function>
+  <Function ID="1" Type="Chaser" Name="RANDOM RED+BLUE - B1 F4 - C1">
+   <Speed FadeIn="4000" FadeOut="5000" Duration="4000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
+   <Step Number="0" FadeIn="1000" Hold="0" FadeOut="500">2</Step>
+   <Step Number="1" FadeIn="1000" Hold="0" FadeOut="500">3</Step>
+  </Function>
+  <Function ID="2" Type="Scene" Name="Main RED - B1 F4 - S1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>6,180,7,255,11,255</ChannelGroupsVal>
+   <FixtureVal ID="2">0,12,1,147,2,0,3,0</FixtureVal>
+   <FixtureVal ID="6">0,24,1,195,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="3" Type="Scene" Name="Main BLUE - B1 F4 - S1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>6,180,7,255,11,255</ChannelGroupsVal>
+   <FixtureVal ID="2">0,29,1,0,2,0,3,96</FixtureVal>
+   <FixtureVal ID="6">0,37,1,0,2,25,3,95</FixtureVal>
+  </Function>
+  <Function ID="4" Type="Scene" Name="Main RED - F2 B3 - S1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>6,180,7,255,11,255</ChannelGroupsVal>
+   <FixtureVal ID="5">0,38,1,211,2,6,3,0</FixtureVal>
+   <FixtureVal ID="4">0,15,1,219,2,12</FixtureVal>
+  </Function>
+  <Function ID="5" Type="Collection" Name="Main BLUE STATIC - ALL - C1">
+   <Step Number="0">38</Step>
+   <Step Number="1">39</Step>
+   <Step Number="2">94</Step>
+   <Step Number="3">95</Step>
+   <Step Number="4">3</Step>
+   <Step Number="5">10</Step>
+  </Function>
+  <Function ID="6" Type="Collection" Name="_TRIGGER MAIN STATIC GREEN">
+   <Step Number="0">72</Step>
+  </Function>
+  <Function ID="7" Type="Scene" Name="Main WHITE - B1 F4 - S1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>18,255,19,0</ChannelGroupsVal>
+   <FixtureVal ID="2">0,36,1,255,2,255,3,255</FixtureVal>
+   <FixtureVal ID="6">0,33,1,249,2,246,3,252</FixtureVal>
+  </Function>
+  <Function ID="8" Type="Scene" Name="_Blackout ALL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>21,0</ChannelGroupsVal>
+   <FixtureVal ID="2">0,0,1,0,2,0,3,0,4,0,5,0,6,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0,3,0,4,0,5,0,6,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0,3,0,4,0,5,0,6,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0,3,0,4,0,5,0,6,0</FixtureVal>
+  </Function>
+  <Function ID="9" Type="Scene" Name="Main RED TWILIGHT - ALL - S1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>6,78,16,255,11,255</ChannelGroupsVal>
+   <FixtureVal ID="2">0,28,1,88,2,0,3,0</FixtureVal>
+   <FixtureVal ID="5">0,29,1,133,2,8,3,0</FixtureVal>
+   <FixtureVal ID="6">0,26,1,78,2,0,3,19</FixtureVal>
+   <FixtureVal ID="4">0,39,1,90,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="10" Type="Scene" Name="Main BLUE - F2 B3 - S1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>6,180,7,255,11,255</ChannelGroupsVal>
+   <FixtureVal ID="5">0,12,1,0,2,41,3,245</FixtureVal>
+   <FixtureVal ID="4">0,29,1,0,2,0,3,247</FixtureVal>
+  </Function>
+  <Function ID="11" Type="Scene" Name="Main YELLOW - ALL - S1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>18,255,19,0</ChannelGroupsVal>
+   <FixtureVal ID="2">0,99,1,203,2,155,3,22</FixtureVal>
+   <FixtureVal ID="5">0,159,1,128,2,39,3,0</FixtureVal>
+   <FixtureVal ID="6">0,159,1,169,2,109,3,0</FixtureVal>
+   <FixtureVal ID="4">0,128,1,95,2,66,3,0</FixtureVal>
+  </Function>
+  <Function ID="12" Type="Chaser" Name="RANDOM RED+BLUE - F2 B3 - C1">
+   <Speed FadeIn="1000" FadeOut="3000" Duration="1000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
+   <Step Number="0" FadeIn="2000" Hold="0" FadeOut="2000">4</Step>
+   <Step Number="1" FadeIn="2000" Hold="0" FadeOut="2000">10</Step>
+  </Function>
+  <Function ID="13" Type="EFX" Name="Dimmer Fort - F2 F4 B3 - D1">
+   <Fixture>
+    <ID>5</ID>
+    <Head>0</Head>
+    <Mode>1</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>6</ID>
+    <Head>0</Head>
+    <Mode>1</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>110</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>4</ID>
+    <Head>0</Head>
+    <Mode>1</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>60</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Lissajous</Algorithm>
+   <Width>127</Width>
+   <Height>80</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>129</Offset>
+    <Frequency>5</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>109</Offset>
+    <Frequency>9</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="14" Type="EFX" Name="Dimmer Fort - B1 - D1">
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>1</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>25</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Lissajous</Algorithm>
+   <Width>127</Width>
+   <Height>77</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>93</Offset>
+    <Frequency>7</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="15" Type="Collection" Name="Main RED STROBE - ALL - C1">
+   <Step Number="0">21</Step>
+   <Step Number="1">2</Step>
+   <Step Number="2">4</Step>
+   <Step Number="3">14</Step>
+   <Step Number="4">13</Step>
+   <Step Number="5">40</Step>
+  </Function>
+  <Function ID="16" Type="Collection" Name="Main RED+BLUE DYNAMIC - ALL - C1">
+   <Step Number="0">1</Step>
+   <Step Number="1">12</Step>
+   <Step Number="2">14</Step>
+   <Step Number="3">13</Step>
+  </Function>
+  <Function ID="17" Type="Collection" Name="Main RED TWILIGHT - ALL - C1">
+   <Step Number="0">67</Step>
+  </Function>
+  <Function ID="18" Type="Collection" Name="Main BLUE STROBE WHITE+RED - ALL - C1">
+   <Step Number="0">21</Step>
+   <Step Number="1">10</Step>
+   <Step Number="2">3</Step>
+   <Step Number="3">14</Step>
+   <Step Number="4">13</Step>
+   <Step Number="5">40</Step>
+  </Function>
+  <Function ID="19" Type="Scene" Name="Strobe RED - B1 B3 - S1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">1,216,2,0,3,0,7,159</FixtureVal>
+   <FixtureVal ID="4">1,216,2,0,3,0,5,181</FixtureVal>
+  </Function>
+  <Function ID="20" Type="Scene" Name="Strobe WHITE - B1 B3 - S1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">1,216,2,213,3,216,7,168</FixtureVal>
+   <FixtureVal ID="4">1,216,2,211,3,212,5,161</FixtureVal>
+  </Function>
+  <Function ID="21" Type="Chaser" Name="RANDOM RED+WHITE / STROBE - B1 B3 - C1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="3000" FadeOut="0">22</Step>
+   <Step Number="1" FadeIn="0" Hold="1000" FadeOut="0">19</Step>
+   <Step Number="2" FadeIn="0" Hold="1000" FadeOut="0">20</Step>
+   <Step Number="3" FadeIn="0" Hold="2000" FadeOut="0">22</Step>
+  </Function>
+  <Function ID="22" Type="Scene" Name="Strobe NONE - B1 B3 - S1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2"/>
+   <FixtureVal ID="4"/>
+  </Function>
+  <Function ID="23" Type="Chaser" Name="LOOP WHITE STROBE / TWILIGHT / STROBE RED - ALL - C1">
+   <Speed FadeIn="0" FadeOut="0" Duration="4000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="2000" FadeOut="0">25</Step>
+   <Step Number="1" FadeIn="0" Hold="2000" FadeOut="0">17</Step>
+   <Step Number="2" FadeIn="0" Hold="2000" FadeOut="0">25</Step>
+   <Step Number="3" FadeIn="0" Hold="2000" FadeOut="0">16</Step>
+   <Step Number="4" FadeIn="0" Hold="2000" FadeOut="0">15</Step>
+   <Step Number="5" FadeIn="0" Hold="2000" FadeOut="0">17</Step>
+   <Step Number="6" FadeIn="0" Hold="3000" FadeOut="0">15</Step>
+   <Step Number="7" FadeIn="0" Hold="1000" FadeOut="0">31</Step>
+  </Function>
+  <Function ID="24" Type="Scene" Name="Strobe WHITE - ALL - S1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>0,177,18,255</ChannelGroupsVal>
+   <FixtureVal ID="2">0,106,1,255,2,255,3,255,7,104</FixtureVal>
+   <FixtureVal ID="5">0,177,1,255,2,255,3,255,5,128</FixtureVal>
+   <FixtureVal ID="6">0,177,1,255,2,255,3,255,5,73</FixtureVal>
+   <FixtureVal ID="4">0,177,1,255,2,255,3,255,5,137</FixtureVal>
+  </Function>
+  <Function ID="25" Type="Collection" Name="_TRIGGER EFFECT STROBE WHITE">
+   <Step Number="0">24</Step>
+   <Step Number="1">14</Step>
+   <Step Number="2">13</Step>
+  </Function>
+  <Function ID="26" Type="Collection" Name="Main RED TWILIGHT DYNAMIC STROBE - ALL - C1">
+   <Step Number="0">23</Step>
+  </Function>
+  <Function ID="27" Type="Scene" Name="Main YELLOW - ALL - S2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>18,255,19,0</ChannelGroupsVal>
+   <FixtureVal ID="2">0,146,1,156,2,98,3,0</FixtureVal>
+   <FixtureVal ID="5">0,159,1,128,2,99,3,0</FixtureVal>
+   <FixtureVal ID="6">0,154,1,161,2,108,3,0</FixtureVal>
+   <FixtureVal ID="4">0,136,1,182,2,164,3,0</FixtureVal>
+  </Function>
+  <Function ID="28" Type="Chaser" Name="RANDOM YELLOW / ORANGE SMOOTH - ALL - C1">
+   <Speed FadeIn="5000" FadeOut="3000" Duration="5000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
+   <Step Number="0" FadeIn="1000" Hold="0" FadeOut="200">36</Step>
+   <Step Number="1" FadeIn="1000" Hold="0" FadeOut="1000">11</Step>
+   <Step Number="2" FadeIn="1000" Hold="0" FadeOut="1000">27</Step>
+  </Function>
+  <Function ID="29" Type="Collection" Name="_TRIGGER MAIN STATIC YELLOW / ORANGE">
+   <Step Number="0">65</Step>
+  </Function>
+  <Function ID="30" Type="Scene" Name="Main YELLOW - F2 F4 - S2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>6,180,7,255,11,255</ChannelGroupsVal>
+   <FixtureVal ID="5">0,200,1,211,2,185,3,0</FixtureVal>
+   <FixtureVal ID="6">0,208,1,237,2,165</FixtureVal>
+  </Function>
+  <Function ID="31" Type="Collection" Name="_TRIGGER FUNC BLACKOUT">
+   <Step Number="0">8</Step>
+  </Function>
+  <Function ID="32" Type="Collection" Name="_TRIGGER FUNC HOUSE LIGHTS">
+   <Step Number="0">0</Step>
+  </Function>
+  <Function ID="33" Type="Collection" Name="_TRIGGER EFFECT FLASH RED">
+   <Step Number="0">86</Step>
+  </Function>
+  <Function ID="34" Type="Scene" Name="Main RED - ALL - S2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>18,255,19,0</ChannelGroupsVal>
+   <FixtureVal ID="2">0,112,1,156,2,12,3,0</FixtureVal>
+   <FixtureVal ID="5">0,159,1,128,2,0,3,0</FixtureVal>
+   <FixtureVal ID="6">0,154,1,115,2,0,3,0</FixtureVal>
+   <FixtureVal ID="4">0,136,1,226,2,8,3,0</FixtureVal>
+  </Function>
+  <Function ID="35" Type="Collection" Name="_TRIGGER MAIN STATIC BLUE">
+   <Step Number="0">93</Step>
+  </Function>
+  <Function ID="36" Type="Scene" Name="Main ORANGE - ALL - S1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>18,255,19,0</ChannelGroupsVal>
+   <FixtureVal ID="2">0,112,1,156,2,9,3,0</FixtureVal>
+   <FixtureVal ID="5">0,159,1,128,2,39,3,0</FixtureVal>
+   <FixtureVal ID="6">0,154,1,115,2,17,3,0</FixtureVal>
+   <FixtureVal ID="4">0,136,1,146,2,36,3,0</FixtureVal>
+  </Function>
+  <Function ID="37" Type="Scene" Name="Main ORANGE - ALL - S2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>18,255,19,0</ChannelGroupsVal>
+   <FixtureVal ID="2">0,112,1,156,2,28,3,0</FixtureVal>
+   <FixtureVal ID="5">0,159,1,128,2,9,3,0</FixtureVal>
+   <FixtureVal ID="6">0,154,1,115,2,30,3,0</FixtureVal>
+   <FixtureVal ID="4">0,136,1,146,2,7,3,0</FixtureVal>
+  </Function>
+  <Function ID="38" Type="EFX" Name="Dimmer Doux - F2 F4 B3 - D1">
+   <Fixture>
+    <ID>5</ID>
+    <Head>0</Head>
+    <Mode>1</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>20</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>6</ID>
+    <Head>0</Head>
+    <Mode>1</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>230</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>4</ID>
+    <Head>0</Head>
+    <Mode>1</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>40</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Lissajous</Algorithm>
+   <Width>127</Width>
+   <Height>50</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>1</Frequency>
+    <Phase>63</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>80</Offset>
+    <Frequency>4</Frequency>
+    <Phase>12</Phase>
+   </Axis>
+  </Function>
+  <Function ID="39" Type="EFX" Name="Dimmer Doux - B1 - D1">
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>1</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Lissajous</Algorithm>
+   <Width>127</Width>
+   <Height>50</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>1</Frequency>
+    <Phase>63</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>50</Offset>
+    <Frequency>4</Frequency>
+    <Phase>12</Phase>
+   </Axis>
+  </Function>
+  <Function ID="40" Type="EFX" Name="Strobe - F2 F4 - E1">
+   <Fixture>
+    <ID>6</ID>
+    <Head>5</Head>
+    <Mode>1</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>5</ID>
+    <Head>5</Head>
+    <Mode>1</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>30</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Lissajous</Algorithm>
+   <Width>127</Width>
+   <Height>61</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>100</Offset>
+    <Frequency>7</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="41" Type="Scene" Name="Main YELLOW - B1 F4 - S2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>6,180,7,255,11,255</ChannelGroupsVal>
+   <FixtureVal ID="2">0,223,1,156,2,145,3,0</FixtureVal>
+   <FixtureVal ID="6">0,163,1,195,2,152,3,0</FixtureVal>
+  </Function>
+  <Function ID="42" Type="Scene" Name="Main RED - ALL - S1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>18,255,19,0</ChannelGroupsVal>
+   <FixtureVal ID="2">0,103,1,156,2,12,3,0</FixtureVal>
+   <FixtureVal ID="5">0,220,1,128,2,0,3,0</FixtureVal>
+   <FixtureVal ID="6">0,218,1,115,2,0,3,0</FixtureVal>
+   <FixtureVal ID="4">0,204,1,226,2,8,3,0</FixtureVal>
+  </Function>
+  <Function ID="43" Type="Collection" Name="Main RED+WHITE DYNAMIC STROBE - ALL - C1">
+   <Step Number="0">4</Step>
+   <Step Number="1">7</Step>
+   <Step Number="2">14</Step>
+   <Step Number="3">13</Step>
+   <Step Number="4">44</Step>
+   <Step Number="5">40</Step>
+  </Function>
+  <Function ID="44" Type="EFX" Name="Strobe HARD - B1 F2 F4 B3 - E1">
+   <Fixture>
+    <ID>2</ID>
+    <Head>7</Head>
+    <Mode>1</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>5</ID>
+    <Head>5</Head>
+    <Mode>1</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>50</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>6</ID>
+    <Head>5</Head>
+    <Mode>1</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>20</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>4</ID>
+    <Head>5</Head>
+    <Mode>1</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>90</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Lissajous</Algorithm>
+   <Width>127</Width>
+   <Height>63</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>8</Frequency>
+    <Phase>92</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>110</Offset>
+    <Frequency>6</Frequency>
+    <Phase>5</Phase>
+   </Axis>
+  </Function>
+  <Function ID="45" Type="EFX" Name="Strobe HARD - F2 F4 - E1">
+   <Fixture>
+    <ID>6</ID>
+    <Head>5</Head>
+    <Mode>1</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>5</ID>
+    <Head>5</Head>
+    <Mode>1</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>30</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Lissajous</Algorithm>
+   <Width>127</Width>
+   <Height>74</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>7</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>8</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="46" Type="Scene" Name="Main WHITE - B1 F2 F4 B3 - S1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>18,255,19,0</ChannelGroupsVal>
+   <FixtureVal ID="2">0,28,1,255,2,255,3,255</FixtureVal>
+   <FixtureVal ID="5">0,28,1,247,2,247,3,245</FixtureVal>
+   <FixtureVal ID="6">0,32,1,249,2,247,3,249</FixtureVal>
+   <FixtureVal ID="4">0,36,1,237,2,235,3,239</FixtureVal>
+  </Function>
+  <Function ID="47" Type="Chaser" Name="RANDOM RED+WHITE / STROBE - ALL - C1">
+   <Speed FadeIn="0" FadeOut="0" Duration="3000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="2000" FadeOut="0">15</Step>
+   <Step Number="1" FadeIn="0" Hold="3000" FadeOut="0">15</Step>
+   <Step Number="2" FadeIn="0" Hold="2000" FadeOut="0">43</Step>
+   <Step Number="3" FadeIn="0" Hold="3000" FadeOut="0">43</Step>
+  </Function>
+  <Function ID="48" Type="Collection" Name="Main ORANGE STATIC - ALL - C1">
+   <Step Number="0">14</Step>
+   <Step Number="1">13</Step>
+   <Step Number="2">36</Step>
+   <Step Number="3">37</Step>
+  </Function>
+  <Function ID="49" Type="Chaser" Name="RANDOM RED+WHITE / STROBE FAST - ALL - C2">
+   <Speed FadeIn="0" FadeOut="0" Duration="3000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0">43</Step>
+   <Step Number="1" FadeIn="0" Hold="300" FadeOut="0">57</Step>
+   <Step Number="2" FadeIn="0" Hold="700" FadeOut="0">51</Step>
+   <Step Number="3" FadeIn="0" Hold="200" FadeOut="0">58</Step>
+  </Function>
+  <Function ID="50" Type="Scene" Name="Main WHITE - F2 B3 - S1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>18,255,19,0</ChannelGroupsVal>
+   <FixtureVal ID="5">0,28,1,247,2,247,3,245</FixtureVal>
+   <FixtureVal ID="4">0,27,1,243,2,243,3,246</FixtureVal>
+  </Function>
+  <Function ID="51" Type="Collection" Name="Main RED+WHITE - ALL - C3">
+   <Step Number="0">2</Step>
+   <Step Number="1">50</Step>
+   <Step Number="2">14</Step>
+   <Step Number="3">13</Step>
+   <Step Number="4">44</Step>
+  </Function>
+  <Function ID="52" Type="Scene" Name="Main WHITE - B1 B3 - S1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>18,255,19,0</ChannelGroupsVal>
+   <FixtureVal ID="2">0,36,1,255,2,255,3,255</FixtureVal>
+   <FixtureVal ID="4">0,18,1,246,2,249,3,246</FixtureVal>
+  </Function>
+  <Function ID="53" Type="Scene" Name="Main WHITE - F2 F4 - S1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>18,255,19,0</ChannelGroupsVal>
+   <FixtureVal ID="5">0,28,1,247,2,247,3,245</FixtureVal>
+   <FixtureVal ID="6">0,21,1,249,2,246,3,249</FixtureVal>
+  </Function>
+  <Function ID="54" Type="Scene" Name="Main RED - B1 B3 - S1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>6,180,7,255,11,255</ChannelGroupsVal>
+   <FixtureVal ID="2">0,59,1,147,2,0,3,0</FixtureVal>
+   <FixtureVal ID="4">0,62,1,172</FixtureVal>
+  </Function>
+  <Function ID="55" Type="Scene" Name="Main RED - F2 F4 - S1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>6,180,7,255,11,255</ChannelGroupsVal>
+   <FixtureVal ID="5">0,68,1,211,2,6,3,0</FixtureVal>
+   <FixtureVal ID="6">0,62,1,237</FixtureVal>
+  </Function>
+  <Function ID="56" Type="EFX" Name="Dimmer Green Flicker - ALL">
+   <Fixture>
+    <ID>4</ID>
+    <Head>0</Head>
+    <Mode>1</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>1</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>5</ID>
+    <Head>0</Head>
+    <Mode>1</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>6</ID>
+    <Head>0</Head>
+    <Mode>1</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Lissajous</Algorithm>
+   <Width>127</Width>
+   <Height>52</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="57" Type="Collection" Name="Main RED+WHITE DYNAMIC STROBE - ALL - C2">
+   <Step Number="0">54</Step>
+   <Step Number="1">53</Step>
+   <Step Number="2">14</Step>
+   <Step Number="3">13</Step>
+   <Step Number="4">44</Step>
+   <Step Number="5">40</Step>
+  </Function>
+  <Function ID="58" Type="Collection" Name="Main RED+WHITE - ALL - C4">
+   <Step Number="0">55</Step>
+   <Step Number="1">52</Step>
+   <Step Number="2">14</Step>
+   <Step Number="3">13</Step>
+   <Step Number="4">44</Step>
+  </Function>
+  <Function ID="59" Type="Collection" Name="Main RED STATIC - ALL - C1">
+   <Step Number="0">34</Step>
+   <Step Number="1">14</Step>
+   <Step Number="2">13</Step>
+  </Function>
+  <Function ID="60" Type="Collection" Name="Main RED DYNAMIC STROBE - ALL - C1">
+   <Step Number="0">21</Step>
+   <Step Number="1">2</Step>
+   <Step Number="2">4</Step>
+   <Step Number="3">14</Step>
+   <Step Number="4">13</Step>
+  </Function>
+  <Function ID="61" Type="Scene" Name="Main YELLOW - F2 B3 - S2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>6,180,7,255,11,255</ChannelGroupsVal>
+   <FixtureVal ID="5">0,221,1,211,2,134,3,0</FixtureVal>
+   <FixtureVal ID="4">0,229,1,219,2,151</FixtureVal>
+  </Function>
+  <Function ID="62" Type="Collection" Name="_TRIGGER MAIN STATIC RED">
+   <Step Number="0">59</Step>
+  </Function>
+  <Function ID="63" Type="Scene" Name="Main YELLOW - B1 B3 - S2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>6,180,7,255,11,255</ChannelGroupsVal>
+   <FixtureVal ID="2">0,230,1,147,2,123,3,0</FixtureVal>
+   <FixtureVal ID="4">0,229,1,217,2,204</FixtureVal>
+  </Function>
+  <Function ID="64" Type="Chaser" Name="RANDOM YELLOW / FLASH - ALL - C1">
+   <Speed FadeIn="0" FadeOut="0" Duration="170"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="170" FadeOut="0">8</Step>
+   <Step Number="1" FadeIn="0" Hold="170" FadeOut="0">27</Step>
+   <Step Number="2" FadeIn="0" Hold="170" FadeOut="0">63</Step>
+   <Step Number="3" FadeIn="0" Hold="170" FadeOut="0">41</Step>
+   <Step Number="4" FadeIn="0" Hold="170" FadeOut="0">61</Step>
+   <Step Number="5" FadeIn="0" Hold="170" FadeOut="0">30</Step>
+  </Function>
+  <Function ID="65" Type="Chaser" Name="RANDOM RED / ORANGE SMOOTH - ALL - C1">
+   <Speed FadeIn="5000" FadeOut="1000" Duration="5000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
+   <Step Number="0" FadeIn="1000" Hold="0" FadeOut="200">36</Step>
+   <Step Number="1" FadeIn="1000" Hold="0" FadeOut="300">37</Step>
+   <Step Number="2" FadeIn="1000" Hold="0" FadeOut="300">34</Step>
+   <Step Number="3" FadeIn="1000" Hold="0" FadeOut="200">42</Step>
+  </Function>
+  <Function ID="66" Type="Collection" Name="_TRIGGER EFFECT FLASH YELLOW">
+   <Step Number="0">64</Step>
+  </Function>
+  <Function ID="67" Type="Chaser" Name="LOOP TWILIGHT - ALL - C1">
+   <Speed FadeIn="0" FadeOut="0" Duration="305000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="PerStep"/>
+   <Step Number="0" FadeIn="5000" Hold="295000" FadeOut="5000">9</Step>
+  </Function>
+  <Function ID="68" Type="Scene" Name="Main GREEN - ALL - S1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>18,255,19,0</ChannelGroupsVal>
+   <FixtureVal ID="2">0,112,1,59,2,205,3,4</FixtureVal>
+   <FixtureVal ID="5">0,159,1,104,2,174,3,0</FixtureVal>
+   <FixtureVal ID="6">0,154,1,86,2,228,3,0</FixtureVal>
+   <FixtureVal ID="4">0,136,1,68,2,235,3,45</FixtureVal>
+  </Function>
+  <Function ID="69" Type="Collection" Name="_TRIGGER MAIN STATIC RED / ORANGE">
+   <Step Number="0">65</Step>
+  </Function>
+  <Function ID="70" Type="Scene" Name="Main GREEN - ALL - S2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>18,255,19,0</ChannelGroupsVal>
+   <FixtureVal ID="2">0,112,1,61,2,140,3,45</FixtureVal>
+   <FixtureVal ID="5">0,159,1,54,2,224,3,0</FixtureVal>
+   <FixtureVal ID="6">0,154,1,135,2,205,3,0</FixtureVal>
+   <FixtureVal ID="4">0,136,1,43,2,196,3,0</FixtureVal>
+  </Function>
+  <Function ID="71" Type="Chaser" Name="RANDOM GREEN SMOOTH - ALL - C1">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="1000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
+   <Step Number="0" FadeIn="1000" Hold="0" FadeOut="1000">68</Step>
+   <Step Number="1" FadeIn="1000" Hold="0" FadeOut="1000">70</Step>
+  </Function>
+  <Function ID="72" Type="Collection" Name="Main GREEN STATIC - ALL - C1">
+   <Step Number="0">71</Step>
+   <Step Number="1">79</Step>
+  </Function>
+  <Function ID="77" Type="Chaser" Name="LOOP RED WAVE - ALL - C1">
+   <Speed FadeIn="300" FadeOut="300" Duration="400"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
+   <Step Number="0" FadeIn="1000" Hold="10" FadeOut="1000">89</Step>
+   <Step Number="1" FadeIn="400" Hold="200" FadeOut="300">90</Step>
+  </Function>
+  <Function ID="78" Type="Collection" Name="Main RED DYNAMIC FAST - ALL - C1">
+   <Step Number="0">82</Step>
+   <Step Number="1">81</Step>
+  </Function>
+  <Function ID="79" Type="EFX" Name="Dimmer Fort++ - ALL - D1">
+   <Fixture>
+    <ID>5</ID>
+    <Head>0</Head>
+    <Mode>1</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>6</ID>
+    <Head>0</Head>
+    <Mode>1</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>138</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>4</ID>
+    <Head>0</Head>
+    <Mode>1</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>65</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>1</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>14</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Lissajous</Algorithm>
+   <Width>127</Width>
+   <Height>66</Height>
+   <Rotation>7</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>129</Offset>
+    <Frequency>11</Frequency>
+    <Phase>99</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>109</Offset>
+    <Frequency>15</Frequency>
+    <Phase>12</Phase>
+   </Axis>
+  </Function>
+  <Function ID="80" Type="Collection" Name="Main RED DYNAMIC WAVE - ALL - C1">
+   <Step Number="0">2</Step>
+   <Step Number="1">4</Step>
+   <Step Number="2">14</Step>
+   <Step Number="3">13</Step>
+  </Function>
+  <Function ID="81" Type="Collection" Name="Main RED WAVE - ALL - C1">
+   <Step Number="0">77</Step>
+   <Step Number="1">54</Step>
+  </Function>
+  <Function ID="82" Type="EFX" Name="Dimmer Fort++ - ALL - D2">
+   <Fixture>
+    <ID>5</ID>
+    <Head>0</Head>
+    <Mode>1</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>6</ID>
+    <Head>0</Head>
+    <Mode>1</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>138</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>4</ID>
+    <Head>0</Head>
+    <Mode>1</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>65</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>1</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>14</StartOffset>
+   </Fixture>
+   <PropagationMode>Asymmetric</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Lissajous</Algorithm>
+   <Width>100</Width>
+   <Height>84</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>129</Offset>
+    <Frequency>20</Frequency>
+    <Phase>97</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>109</Offset>
+    <Frequency>15</Frequency>
+    <Phase>12</Phase>
+   </Axis>
+  </Function>
+  <Function ID="83" Type="Scene" Name="Main WHITE COLD - ALL - S1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>18,255,19,0</ChannelGroupsVal>
+   <FixtureVal ID="2">0,216,1,200,2,230,3,255</FixtureVal>
+   <FixtureVal ID="4">0,255,1,200,2,230,3,255</FixtureVal>
+   <FixtureVal ID="5">0,31,1,0,2,63,3,255</FixtureVal>
+   <FixtureVal ID="6">0,31,1,0,2,60,3,255</FixtureVal>
+  </Function>
+  <Function ID="84" Type="Collection" Name="Main WHITE COLD STATIC - ALL - C1">
+   <Step Number="0">83</Step>
+   <Step Number="1">39</Step>
+   <Step Number="2">85</Step>
+  </Function>
+  <Function ID="85" Type="EFX" Name="Dimmer Doux - B3 - D1">
+   <Fixture>
+    <ID>4</ID>
+    <Head>0</Head>
+    <Mode>1</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>30</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Lissajous</Algorithm>
+   <Width>127</Width>
+   <Height>30</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>63</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>50</Offset>
+    <Frequency>5</Frequency>
+    <Phase>12</Phase>
+   </Axis>
+  </Function>
+  <Function ID="86" Type="Chaser" Name="RANDOM RED / FLASH - ALL - C1">
+   <Speed FadeIn="0" FadeOut="0" Duration="170"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">55</Step>
+   <Step Number="1" FadeIn="0" Hold="100" FadeOut="0">42</Step>
+   <Step Number="2" FadeIn="0" Hold="170" FadeOut="0">87</Step>
+   <Step Number="3" FadeIn="0" Hold="170" FadeOut="0">88</Step>
+   <Step Number="4" FadeIn="0" Hold="170" FadeOut="0">8</Step>
+   <Step Number="5" FadeIn="0" Hold="170" FadeOut="0">89</Step>
+  </Function>
+  <Function ID="87" Type="Scene" Name="Main RED - B1 F4 - S2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>6,180,7,255,11,255</ChannelGroupsVal>
+   <FixtureVal ID="2">0,223,1,147,2,0,3,0</FixtureVal>
+   <FixtureVal ID="6">0,163,1,195,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="88" Type="Scene" Name="Main RED - F2 B3 - S2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>6,180,7,255,11,255</ChannelGroupsVal>
+   <FixtureVal ID="5">0,221,1,211,2,6,3,0</FixtureVal>
+   <FixtureVal ID="4">0,229,1,219,2,12</FixtureVal>
+  </Function>
+  <Function ID="89" Type="Scene" Name="Main RED - B1 B3 - S2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>6,180,7,255,11,255</ChannelGroupsVal>
+   <FixtureVal ID="2">0,230,1,147,2,0,3,0</FixtureVal>
+   <FixtureVal ID="4">0,229,1,172</FixtureVal>
+  </Function>
+  <Function ID="90" Type="Scene" Name="Main RED - F2 F4 - S2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>6,180,7,255,11,255</ChannelGroupsVal>
+   <FixtureVal ID="5">0,200,1,211,2,6,3,0</FixtureVal>
+   <FixtureVal ID="6">0,208,1,237</FixtureVal>
+  </Function>
+  <Function ID="93" Type="Collection" Name="Main BLUE DYNAMIC - ALL - C1">
+   <Step Number="0">3</Step>
+   <Step Number="1">10</Step>
+   <Step Number="2">14</Step>
+   <Step Number="3">13</Step>
+  </Function>
+  <Function ID="94" Type="Scene" Name="Main BLUE - B1 F4 - S2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>6,180,7,255,11,255</ChannelGroupsVal>
+   <FixtureVal ID="2">0,174,1,0,2,0,3,96</FixtureVal>
+   <FixtureVal ID="6">0,179,1,0,2,19,3,95</FixtureVal>
+  </Function>
+  <Function ID="95" Type="Scene" Name="Main BLUE - F2 B3 - S2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>6,180,7,255,11,255</ChannelGroupsVal>
+   <FixtureVal ID="5">0,128,1,0,2,39,3,245</FixtureVal>
+   <FixtureVal ID="4">0,185,1,0,2,0,3,247</FixtureVal>
+  </Function>
+  <Function ID="96" Type="Collection" Name="Main WHITE DYNAMIC STROBE - ALL - Effect 2">
+   <Step Number="0">24</Step>
+   <Step Number="1">14</Step>
+   <Step Number="2">13</Step>
+  </Function>
+  <Function ID="97" Type="Scene" Name="Strobe WHITE - ALL - S2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>0,177,18,255</ChannelGroupsVal>
+   <FixtureVal ID="2">0,106,1,255,2,255,3,255,7,123</FixtureVal>
+   <FixtureVal ID="5">0,177,1,255,2,255,3,255,5,80</FixtureVal>
+   <FixtureVal ID="6">0,177,1,255,2,255,3,255,5,104</FixtureVal>
+   <FixtureVal ID="4">0,177,1,255,2,255,3,255,5,99</FixtureVal>
+  </Function>
+  <Monitor DisplayMode="1" ShowLabels="1">
+   <Font>.AppleSystemUIFont,13,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+   <ChannelStyle>0</ChannelStyle>
+   <ValueStyle>0</ValueStyle>
+   <Grid Width="11" Height="3" Depth="4" Units="0"/>
+   <FxItem ID="2" XPos="600" YPos="400" GelColor="#ff0000"/>
+   <FxItem ID="4" XPos="8000" YPos="400" GelColor="#ff0000"/>
+   <FxItem ID="5" XPos="600" YPos="2500" GelColor="#ff0000"/>
+   <FxItem ID="6" XPos="8000" YPos="2500" GelColor="#ff0000"/>
+  </Monitor>
+ </Engine>
+ <VirtualConsole>
+  <Frame Caption="">
+   <Appearance>
+    <FrameStyle>None</FrameStyle>
+    <ForegroundColor>Default</ForegroundColor>
+    <BackgroundColor>4294835966</BackgroundColor>
+    <BackgroundImage>None</BackgroundImage>
+    <Font>Default</Font>
+   </Appearance>
+   <Button Caption="MAIN      TWILIGHT" ID="3" Icon="">
+    <WindowState Visible="True" X="0" Y="0" Width="190" Height="90"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>.AppleSystemUIFont,24,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+    </Appearance>
+    <Function ID="4294967295"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="164"/>
+   </Button>
+   <Button Caption="HOUSE LIGHTS" ID="0" Icon="">
+    <WindowState Visible="True" X="400" Y="0" Width="190" Height="90"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>.AppleSystemUIFont,24,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+    </Appearance>
+    <Function ID="32"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="BLACKOUT" ID="5" Icon="">
+    <WindowState Visible="True" X="600" Y="0" Width="190" Height="90"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>4294901502</ForegroundColor>
+     <BackgroundColor>4278517762</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>.AppleSystemUIFont,24,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+    </Appearance>
+    <Function ID="31"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="RED / ORANGE" ID="2" Icon="">
+    <WindowState Visible="True" X="0" Y="100" Width="190" Height="190"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>4294901502</ForegroundColor>
+     <BackgroundColor>4291304192</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>.AppleSystemUIFont,24,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+    </Appearance>
+    <Function ID="69"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="STROBE WHITE" ID="13" Icon="">
+    <WindowState Visible="True" X="0" Y="300" Width="390" Height="90"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>4278190080</ForegroundColor>
+     <BackgroundColor>4294967295</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>.AppleSystemUIFont,24,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+    </Appearance>
+    <Function ID="25"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="BLUE" ID="1" Icon="">
+    <WindowState Visible="True" X="400" Y="100" Width="190" Height="190"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>4294967295</ForegroundColor>
+     <BackgroundColor>4279312884</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>.AppleSystemUIFont,24,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+    </Appearance>
+    <Function ID="35"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="GREEN" ID="4" Icon="">
+    <WindowState Visible="True" X="600" Y="100" Width="190" Height="190"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>4278190080</ForegroundColor>
+     <BackgroundColor>4284210523</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>.AppleSystemUIFont,24,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+    </Appearance>
+    <Function ID="6"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="FLASH RED" ID="6" Icon="">
+    <WindowState Visible="True" X="400" Y="300" Width="390" Height="90"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>4278190080</ForegroundColor>
+     <BackgroundColor>4294926906</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>.AppleSystemUIFont,24,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+    </Appearance>
+    <Function ID="33"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="YELLOW" ID="7" Icon="">
+    <WindowState Visible="True" X="200" Y="100" Width="190" Height="190"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>4278190080</ForegroundColor>
+     <BackgroundColor>4293384448</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>.AppleSystemUIFont,24,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+    </Appearance>
+    <Function ID="29"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="FLASH YELLOW" ID="8" Icon="">
+    <WindowState Visible="True" X="400" Y="400" Width="390" Height="90"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>4278190080</ForegroundColor>
+     <BackgroundColor>4293713943</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>.AppleSystemUIFont,24,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+    </Appearance>
+    <Function ID="64"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+  </Frame>
+  <Properties>
+   <Size Width="1200" Height="800"/>
+   <GrandMaster Visible="1" ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal"/>
+  </Properties>
+ </VirtualConsole>
+ <SimpleDesk>
+  <Engine/>
+ </SimpleDesk>
+</Workspace>
