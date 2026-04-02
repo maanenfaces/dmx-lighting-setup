@@ -1136,7 +1136,7 @@
    <FixtureVal ID="4">0,177,1,255,2,255,3,255,5,99</FixtureVal>
   </Function>
   <Monitor DisplayMode="1" ShowLabels="1">
-   <Font>.AppleSystemUIFont,13,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+   <Font>.AppleSystemUIFont,13,-1,5,50,0,0,0,0,0</Font>
    <ChannelStyle>0</ChannelStyle>
    <ValueStyle>0</ValueStyle>
    <Grid Width="11" Height="3" Depth="4" Units="0"/>
@@ -1162,7 +1162,7 @@
      <ForegroundColor>Default</ForegroundColor>
      <BackgroundColor>Default</BackgroundColor>
      <BackgroundImage>None</BackgroundImage>
-     <Font>.AppleSystemUIFont,24,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+     <Font>.AppleSystemUIFont,13,-1,5,50,0,0,0,0,0</Font>
     </Appearance>
     <Function ID="36"/>
     <Action>Toggle</Action>
@@ -1176,7 +1176,7 @@
      <ForegroundColor>Default</ForegroundColor>
      <BackgroundColor>Default</BackgroundColor>
      <BackgroundImage>None</BackgroundImage>
-     <Font>.AppleSystemUIFont,24,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+     <Font>.AppleSystemUIFont,13,-1,5,50,0,0,0,0,0</Font>
     </Appearance>
     <Function ID="32"/>
     <Action>Toggle</Action>
@@ -1189,7 +1189,7 @@
      <ForegroundColor>4294901502</ForegroundColor>
      <BackgroundColor>4278517762</BackgroundColor>
      <BackgroundImage>None</BackgroundImage>
-     <Font>.AppleSystemUIFont,24,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+     <Font>.AppleSystemUIFont,13,-1,5,50,0,0,0,0,0</Font>
     </Appearance>
     <Function ID="31"/>
     <Action>Toggle</Action>
@@ -1202,7 +1202,7 @@
      <ForegroundColor>4294901502</ForegroundColor>
      <BackgroundColor>4291297280</BackgroundColor>
      <BackgroundImage>None</BackgroundImage>
-     <Font>.AppleSystemUIFont,24,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+     <Font>.AppleSystemUIFont,13,-1,5,50,0,0,0,0,0</Font>
     </Appearance>
     <Function ID="69"/>
     <Action>Toggle</Action>
@@ -1215,7 +1215,7 @@
      <ForegroundColor>4294901502</ForegroundColor>
      <BackgroundColor>4284153947</BackgroundColor>
      <BackgroundImage>None</BackgroundImage>
-     <Font>.AppleSystemUIFont,24,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+     <Font>.AppleSystemUIFont,13,-1,5,50,0,0,0,0,0</Font>
     </Appearance>
     <Function ID="73"/>
     <Action>Toggle</Action>
@@ -1228,7 +1228,7 @@
      <ForegroundColor>4294901502</ForegroundColor>
      <BackgroundColor>4291297280</BackgroundColor>
      <BackgroundImage>None</BackgroundImage>
-     <Font>.AppleSystemUIFont,22,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+     <Font>.AppleSystemUIFont,13,-1,5,50,0,0,0,0,0</Font>
     </Appearance>
     <Function ID="68"/>
     <Action>Toggle</Action>
@@ -1241,7 +1241,7 @@
      <ForegroundColor>4278190080</ForegroundColor>
      <BackgroundColor>4278255397</BackgroundColor>
      <BackgroundImage>None</BackgroundImage>
-     <Font>.AppleSystemUIFont,22,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+     <Font>.AppleSystemUIFont,13,-1,5,50,0,0,0,0,0</Font>
     </Appearance>
     <Function ID="6"/>
     <Action>Toggle</Action>
@@ -1254,7 +1254,7 @@
      <ForegroundColor>4294901502</ForegroundColor>
      <BackgroundColor>4278190080</BackgroundColor>
      <BackgroundImage>None</BackgroundImage>
-     <Font>.AppleSystemUIFont,24,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+     <Font>.AppleSystemUIFont,13,-1,5,50,0,0,0,0,0</Font>
     </Appearance>
     <Function ID="65"/>
     <Action>Toggle</Action>
@@ -1267,7 +1267,7 @@
      <ForegroundColor>4294901502</ForegroundColor>
      <BackgroundColor>4291297280</BackgroundColor>
      <BackgroundImage>None</BackgroundImage>
-     <Font>.AppleSystemUIFont,24,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+     <Font>.AppleSystemUIFont,13,-1,5,50,0,0,0,0,0</Font>
     </Appearance>
     <Function ID="72"/>
     <Action>Toggle</Action>
@@ -1280,7 +1280,7 @@
      <ForegroundColor>4278517761</ForegroundColor>
      <BackgroundColor>4281860351</BackgroundColor>
      <BackgroundImage>None</BackgroundImage>
-     <Font>.AppleSystemUIFont,24,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+     <Font>.AppleSystemUIFont,13,-1,5,50,0,0,0,0,0</Font>
     </Appearance>
     <Function ID="75"/>
     <Action>Toggle</Action>
@@ -1293,7 +1293,7 @@
      <ForegroundColor>4294901502</ForegroundColor>
      <BackgroundColor>4284153947</BackgroundColor>
      <BackgroundImage>None</BackgroundImage>
-     <Font>.AppleSystemUIFont,24,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+     <Font>.AppleSystemUIFont,13,-1,5,50,0,0,0,0,0</Font>
     </Appearance>
     <Function ID="74"/>
     <Action>Toggle</Action>
@@ -1306,7 +1306,7 @@
      <ForegroundColor>4294901502</ForegroundColor>
      <BackgroundColor>4291297280</BackgroundColor>
      <BackgroundImage>None</BackgroundImage>
-     <Font>.AppleSystemUIFont,24,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+     <Font>.AppleSystemUIFont,13,-1,5,50,0,0,0,0,0</Font>
     </Appearance>
     <Function ID="70"/>
     <Action>Toggle</Action>
@@ -1319,7 +1319,7 @@
      <ForegroundColor>4294901502</ForegroundColor>
      <BackgroundColor>4291297280</BackgroundColor>
      <BackgroundImage>None</BackgroundImage>
-     <Font>.AppleSystemUIFont,24,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+     <Font>.AppleSystemUIFont,13,-1,5,50,0,0,0,0,0</Font>
     </Appearance>
     <Function ID="71"/>
     <Action>Toggle</Action>
@@ -1332,7 +1332,7 @@
      <ForegroundColor>Default</ForegroundColor>
      <BackgroundColor>4278255397</BackgroundColor>
      <BackgroundImage>None</BackgroundImage>
-     <Font>.AppleSystemUIFont,24,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+     <Font>.AppleSystemUIFont,13,-1,5,50,0,0,0,0,0</Font>
     </Appearance>
     <Function ID="48"/>
     <Action>Toggle</Action>
