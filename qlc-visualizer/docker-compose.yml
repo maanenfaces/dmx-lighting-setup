@@ -7,7 +7,7 @@ services:
     environment:
       - QXW_PATH=/app/data/show.qxw
     volumes:
-      - ../show_4_spots_sol_2026_02:/app/data:ro
+      - ../show_4_spots_sol_2026_04_malville:/app/data:ro
     restart: always
 
   ui:
