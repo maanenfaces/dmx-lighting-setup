@@ -127,8 +127,8 @@
   <Function ID="3" Type="Scene" Name="Main BLUE - B1 F4 - S1">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>6,180,7,255,11,255</ChannelGroupsVal>
-   <FixtureVal ID="2">0,29,1,0,2,0,3,96</FixtureVal>
-   <FixtureVal ID="6">0,37,1,0,2,25,3,95</FixtureVal>
+   <FixtureVal ID="2">0,8,1,0,2,0,3,96</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,25,3,95</FixtureVal>
   </Function>
   <Function ID="4" Type="Scene" Name="Main RED - F2 B3 - S1">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -139,10 +139,7 @@
   <Function ID="5" Type="Collection" Name="Main BLUE - ALL - C1">
    <Step Number="0">3</Step>
    <Step Number="1">10</Step>
-   <Step Number="2">94</Step>
-   <Step Number="3">95</Step>
-   <Step Number="4">39</Step>
-   <Step Number="5">38</Step>
+   <Step Number="2">38</Step>
   </Function>
   <Function ID="6" Type="Collection" Name="_TRIGGER TRACK 3 - DARKNESS END">
    <Step Number="0">11</Step>
@@ -172,8 +169,8 @@
   <Function ID="10" Type="Scene" Name="Main BLUE - F2 B3 - S1">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>6,180,7,255,11,255</ChannelGroupsVal>
-   <FixtureVal ID="5">0,12,1,0,2,41,3,245</FixtureVal>
-   <FixtureVal ID="4">0,29,1,0,2,0,3,247</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,41,3,245</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0,3,247</FixtureVal>
   </Function>
   <Function ID="11" Type="Chaser" Name="TRACK 3 - DARKNESS END">
    <Speed FadeIn="0" FadeOut="0" Duration="12000"/>
@@ -428,7 +425,7 @@
    <RunOrder>Loop</RunOrder>
    <Algorithm>Lissajous</Algorithm>
    <Width>127</Width>
-   <Height>50</Height>
+   <Height>100</Height>
    <Rotation>0</Rotation>
    <StartOffset>0</StartOffset>
    <IsRelative>0</IsRelative>
@@ -438,7 +435,7 @@
     <Phase>63</Phase>
    </Axis>
    <Axis Name="Y">
-    <Offset>80</Offset>
+    <Offset>120</Offset>
     <Frequency>4</Frequency>
     <Phase>12</Phase>
    </Axis>
