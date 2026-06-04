@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.14.4</Version>
@@ -11,7 +11,7 @@
    <BeatGenerator BeatType="Disabled" BPM="0"/>
    <NetworkServer Type="Native" AutoStart="False" Name="" Password=""/>
    <Universe Name="Universe 1" ID="0">
-    <Output Plugin="ArtNet" UID="192.168.1.69" Line="1"/>
+    <Output Plugin="ArtNet" UID="192.168.107.0" Line="2"/>
    </Universe>
    <Universe Name="Universe 2" ID="1"/>
    <Universe Name="Universe 3" ID="2"/>
@@ -347,12 +347,12 @@
   <Function ID="26" Type="Collection" Name="Twilight Strobe - ALL - C1">
    <Step Number="0">23</Step>
   </Function>
-  <Function ID="27" Type="Scene" Name="Interlude GREEN DEEP - ALL - S1">
+  <Function ID="27" Type="Scene" Name="Interlude RED DEEP - ALL - S1">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="2">0,60,1,0,2,10,3,118</FixtureVal>
-   <FixtureVal ID="4">0,51,1,0,2,17,3,162</FixtureVal>
-   <FixtureVal ID="5">0,41,1,0,2,10,3,162</FixtureVal>
-   <FixtureVal ID="6">0,43,1,0,2,12,3,60</FixtureVal>
+   <FixtureVal ID="2">0,60,1,138,2,10,3,0</FixtureVal>
+   <FixtureVal ID="4">0,51,1,164,2,17,3,0</FixtureVal>
+   <FixtureVal ID="5">0,41,1,162,2,10,3,0</FixtureVal>
+   <FixtureVal ID="6">0,43,1,173,2,12,3,0</FixtureVal>
   </Function>
   <Function ID="28" Type="Scene" Name="Interlude WHITE LIGHTNING - ALL - S1">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -362,22 +362,21 @@
    <FixtureVal ID="6">0,177,1,255,2,255,3,255,5,86</FixtureVal>
    <FixtureVal ID="4">0,177,1,255,2,255,3,255,5,160</FixtureVal>
   </Function>
-  <Function ID="29" Type="Scene" Name="Interlude GREEN FLASH - ALL - S1">
+  <Function ID="29" Type="Scene" Name="Interlude RED FLASH - ALL - S1">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="2">0,146,1,0,2,10,3,127</FixtureVal>
-   <FixtureVal ID="4">0,144,1,0,2,13,3,117</FixtureVal>
-   <FixtureVal ID="5">0,137,1,0,2,9,3,91</FixtureVal>
-   <FixtureVal ID="6">0,146,1,0,2,12,3,92</FixtureVal>
+   <FixtureVal ID="2">0,146,1,180,2,59,3,0</FixtureVal>
+   <FixtureVal ID="4">0,144,1,180,2,13,3,101</FixtureVal>
+   <FixtureVal ID="5">0,137,1,196,2,9,3,101</FixtureVal>
+   <FixtureVal ID="6">0,146,1,178,2,12,3,0</FixtureVal>
   </Function>
   <Function ID="30" Type="Chaser" Name="TRACK 4 - INTERLUDE">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>SingleShot</RunOrder>
    <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="PerStep"/>
-   <Step Number="0" FadeIn="5000" Hold="40000" FadeOut="0">27</Step>
-   <Step Number="1" FadeIn="0" Hold="45000" FadeOut="0">66</Step>
-   <Step Number="2" FadeIn="0" Hold="15000" FadeOut="0">28</Step>
-   <Step Number="3" FadeIn="0" Hold="900000" FadeOut="5000">27</Step>
+   <Step Number="0" FadeIn="0" Hold="45000" FadeOut="0">66</Step>
+   <Step Number="1" FadeIn="0" Hold="15000" FadeOut="0">28</Step>
+   <Step Number="2" FadeIn="0" Hold="900000" FadeOut="5000">27</Step>
   </Function>
   <Function ID="31" Type="Collection" Name="_TRIGGER BLACKOUT">
    <Step Number="0">8</Step>
@@ -792,7 +791,7 @@
   <Function ID="65" Type="Collection" Name="_TRIGGER TRACK 4 - INTERLUDE">
    <Step Number="0">64</Step>
   </Function>
-  <Function ID="66" Type="Chaser" Name="RANDOM GREEN / STROBE WHITE - ALL - C2">
+  <Function ID="66" Type="Chaser" Name="RANDOM RED / STROBE WHITE - ALL - C2">
    <Speed FadeIn="500" FadeOut="400" Duration="1000"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
@@ -1242,6 +1241,16 @@
    <Step Number="0" FadeIn="0" Hold="1000" FadeOut="0">96</Step>
    <Step Number="1" FadeIn="0" Hold="900000" FadeOut="0">47</Step>
   </Function>
+  <Function ID="110" Type="Chaser" Name="TRACK 0 - INTRO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="PerStep"/>
+   <Step Number="0" FadeIn="5000" Hold="1000" FadeOut="0">27</Step>
+   <Step Number="1" FadeIn="0" Hold="45000" FadeOut="0">66</Step>
+   <Step Number="2" FadeIn="0" Hold="15000" FadeOut="0">28</Step>
+   <Step Number="3" FadeIn="0" Hold="900000" FadeOut="5000">27</Step>
+  </Function>
   <Monitor DisplayMode="1" ShowLabels="1">
    <Font>.AppleSystemUIFont,13,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
    <ChannelStyle>0</ChannelStyle>
@@ -1263,7 +1272,7 @@
     <Font>Default</Font>
    </Appearance>
    <Button Caption="MAIN      TWILIGHT" ID="3" Icon="">
-    <WindowState Visible="False" X="0" Y="0" Width="190" Height="190"/>
+    <WindowState Visible="True" X="0" Y="0" Width="190" Height="190"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1277,7 +1286,7 @@
     <Input Universe="0" Channel="164"/>
    </Button>
    <Button Caption="HOUSE LIGHTS" ID="0" Icon="">
-    <WindowState Visible="False" X="400" Y="0" Width="190" Height="190"/>
+    <WindowState Visible="True" X="400" Y="0" Width="190" Height="190"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1290,7 +1299,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="BLACKOUT" ID="5" Icon="">
-    <WindowState Visible="False" X="600" Y="0" Width="190" Height="190"/>
+    <WindowState Visible="True" X="600" Y="0" Width="190" Height="190"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>4294901502</ForegroundColor>
@@ -1303,7 +1312,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="1. GDP P1" ID="2" Icon="">
-    <WindowState Visible="False" X="0" Y="200" Width="190" Height="90"/>
+    <WindowState Visible="True" X="0" Y="200" Width="190" Height="90"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>4294901502</ForegroundColor>
@@ -1316,7 +1325,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="3. DARKNESS P1" ID="6" Icon="">
-    <WindowState Visible="False" X="200" Y="200" Width="190" Height="90"/>
+    <WindowState Visible="True" X="200" Y="200" Width="190" Height="90"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>4294901502</ForegroundColor>
@@ -1329,7 +1338,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="3. DARKNESS P2                                                      ___                                                          START: SUR GUITARE" ID="15" Icon="">
-    <WindowState Visible="False" X="200" Y="300" Width="190" Height="90"/>
+    <WindowState Visible="True" X="200" Y="300" Width="190" Height="90"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>4278190080</ForegroundColor>
@@ -1342,7 +1351,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="4. INTERLUDE" ID="14" Icon="">
-    <WindowState Visible="False" X="400" Y="200" Width="190" Height="190"/>
+    <WindowState Visible="True" X="400" Y="200" Width="190" Height="190"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>4294901502</ForegroundColor>
@@ -1355,7 +1364,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="5. DESTROY                                        ___                                     START: ATTEND 1 MESURE                                                   END: AUTO SUR LIGEIA" ID="13" Icon="">
-    <WindowState Visible="False" X="600" Y="195" Width="190" Height="190"/>
+    <WindowState Visible="True" X="600" Y="195" Width="190" Height="190"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>4294901502</ForegroundColor>
@@ -1368,7 +1377,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="6. LIGEIA" ID="1" Icon="">
-    <WindowState Visible="False" X="0" Y="400" Width="190" Height="190"/>
+    <WindowState Visible="True" X="0" Y="400" Width="190" Height="190"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>4278517761</ForegroundColor>
@@ -1381,7 +1390,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="7. PART 1" ID="4" Icon="">
-    <WindowState Visible="False" X="200" Y="400" Width="190" Height="190"/>
+    <WindowState Visible="True" X="200" Y="400" Width="190" Height="190"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>4294901502</ForegroundColor>
@@ -1394,7 +1403,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="8. BOOGEYMAN" ID="9" Icon="">
-    <WindowState Visible="False" X="400" Y="400" Width="190" Height="190"/>
+    <WindowState Visible="True" X="400" Y="400" Width="190" Height="190"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>4294901502</ForegroundColor>
@@ -1407,7 +1416,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="9. ROBOTS" ID="8" Icon="">
-    <WindowState Visible="False" X="600" Y="400" Width="190" Height="90"/>
+    <WindowState Visible="True" X="600" Y="400" Width="190" Height="90"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>4294901502</ForegroundColor>
@@ -1420,7 +1429,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="ROBOTS       ENDING                                        ___                                                STAT: VOIX MANU" ID="7" Icon="">
-    <WindowState Visible="False" X="600" Y="500" Width="190" Height="90"/>
+    <WindowState Visible="True" X="600" Y="500" Width="190" Height="90"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1434,7 +1443,7 @@
     <Input Universe="0" Channel="164"/>
    </Button>
    <Button Caption="1. GDP P2" ID="10" Icon="">
-    <WindowState Visible="False" X="0" Y="300" Width="190" Height="90"/>
+    <WindowState Visible="True" X="0" Y="300" Width="190" Height="90"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>4278190080</ForegroundColor>
@@ -1443,6 +1452,19 @@
      <Font>.AppleSystemUIFont,13,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
     </Appearance>
     <Function ID="108"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="INTRO INTRO INTRO INTRO INTRO INTRO                                                                                     _________________                                                                             1MIN" ID="11" Icon="">
+    <WindowState Visible="True" X="200" Y="0" Width="185" Height="190"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>4294901502</ForegroundColor>
+     <BackgroundColor>4291297280</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>.AppleSystemUIFont,13,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+    </Appearance>
+    <Function ID="110"/>
     <Action>Toggle</Action>
     <Intensity Adjust="False">100</Intensity>
    </Button>
